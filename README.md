@@ -13,7 +13,7 @@
 ```
 - `which brew` -> `/usr/local/bin/brew`
 
-- brew를 통해 설치된 formula, cask 의 경로 -> `/usr/local/bin`
+- path for formulae and casks installed through brew  -> `/usr/local/bin`
   - e.g. `/usr/local/bin/git`
   - e.g. `Visual studio code`  
       - `/Applications/Visual Studio Code.app`  
@@ -38,19 +38,19 @@
     - `p10k configure` -> `lean`
   - #### font
     - [Cousine Nerd Font](https://www.nerdfonts.com/font-downloads)
-        - download > double-click > add to `Font Book.app` > terminal > `Settings` > `Profiles` > `Font` -  `Cousine Nerd Font`로 변경
+        - download > double-click > add to `Font Book.app` > terminal > `Settings` > `Profiles` > change `Font` -  `Cousine Nerd Font`
 
 
 #### lf
 - `~/.config/lf`
-- `brew install lf` > 파일 찾기 gui
-- `brew install fd` > lf를 위한 파일 찾기
-- `brew install trash` > lf를 위한 파일 삭제
+- `brew install lf` > GUI for file searching
+- `brew install fd` > file searching for lf
+- `brew install trash` > file deleting for lf
 - todo: `ueberzug`, `ffd`, `rgfzf` 
 
 #### fzf
 - `brew install fzf`
-- config > `~/.zshrc` 참고
+- config > `~/.zshrc`
 
 #### vim
 - `~/.vim/colors/onehalfdark.vim`
