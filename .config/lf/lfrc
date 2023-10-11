@@ -1,0 +1,69 @@
+#https://pkg.go.dev/github.com/gokcehan/lf#section-readme
+
+# Custom functions
+cmd mkdir ${{
+    printf "Directory Name: "
+    read ans
+    mkdir $ans
+}}
+
+cmd mkfile ${{
+    printf "File Name: "
+    read ans
+    $EDITOR $ans
+}}
+
+cmd trash ${{
+    files=$(printf "$fx" | tr '\n' ';')
+    while [ "$files" ]; do
+        file=${files%%;*}
+
+        trash "$(basename "$file")"
+            if [ "$files" = "$file" ]; then
+            files=''
+            else
+        files="${files#*;}"
+    fi
+  done
+}}
+
+# https://gist.github.com/vratiu/9780109
+set cursoractivefmt "\033[46m\033[1;30m"
+set cursorparentfmt "\033[46m\033[1;30m"
+set cursorpreviewfmt "\033[46m\033[1;30m"
+
+# Basic settings
+set hidden true
+set ignorecase true
+set icons true
+
+# Bindings
+map d
+map m
+
+# Basic functions
+map . set hidden!
+map dd trash
+map p paste
+map y copy
+map x cut
+map <enter> open
+map r reload
+map mkdir mkdir
+map mkf mkfile
+
+# Movement
+map gh cd ~/
+map gd cd ~/DEV_ROOT
+map gz cd ~/DEV_ROOT/sdk/zsh
+map gp cd ~/personal
+map [ half-up
+map ] half-down
+map { page-up
+map } page-down
+
+# space - select
+# u - unselect
+# v - invert 
+# c - clear
+# s - sorting
