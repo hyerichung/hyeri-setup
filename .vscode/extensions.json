@@ -1,0 +1,29 @@
+{
+  "list": [
+    // config (text, lint etc.)
+    "dbaeumer.vscode-eslint",
+    "richie5um2.vscode-sort-json",
+    "cschlosser.doxdocgen",
+    "EditorConfig.EditorConfig",
+    // ui
+    "equinusocio.vsc-material-theme-icons",
+    "oderwat.indent-rainbow",
+    "GitHub.github-vscode-theme",
+    // dev
+    "rangav.vscode-thunder-client",
+    "ritwickdey.LiveServer",
+    "AntiAntiSepticeye.vscode-color-picker",
+    "formulahendry.auto-rename-tag",
+    "jock.svg",
+    "usernamehw.errorlens",
+    "waderyan.gitblame",
+    "wix.vscode-import-cost",
+    // spell
+    "znck.grammarly",
+    "streetsidesoftware.code-spell-checker",
+    "wayou.vscode-todo-highlight",
+    // etc
+    "adpyke.codesnap",
+    "WakaTime.vscode-wakatime"
+  ]
+}
