@@ -1,4 +1,6 @@
 # Hyeri's setup
+<img src="./assets/fzf.png" alt="fzf" style="height: auto; width:50%;"/>
+<img src="./assets/lf.png" alt="fzf" style="height: auto; width:60%;"/>
 
 #### shell
 - print all of shell  
