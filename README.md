@@ -22,14 +22,14 @@
 #### zsh
   - [`$HOME/DEV_ROOT/sdk/zsh/.zshrc`](/DEV_ROOT/sdk/zsh/.zshrc)<br>
   - #### plugins
-    - [`$HOME/DEV_ROOT/sdk/zsh/plugins`](/DEV_ROOT/sdk/zsh/plugins/)<br>
+    - `$HOME/DEV_ROOT/sdk/zsh/plugins`<br>
       - [fast-syntax-highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting)
       - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
       - [zsh-autocompletions](https://github.com/marlonrichert/zsh-autocomplete)
       - [zsh-you-should-use](https://github.com/MichaelAquilina/zsh-you-should-use)
   - #### powerlevel10k
     - i don't want to use oh-my-zsh
-    - [`$HOME/DEV_ROOT/sdk/zsh/powerlevel10k`](./DEV_ROOT/sdk/zsh/powerlevel10k/)
+    - `$HOME/DEV_ROOT/sdk/zsh/powerlevel10k`
 
       ```
         git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
@@ -54,7 +54,7 @@
 
 #### vim
 - `~/.vim/colors/onehalfdark.vim`
-  - copy [One half dark](https://github.com/sonph/onehalf/blob/master/vim/colors/onehalfdark.vim)
+  - copy [one half dark](https://github.com/sonph/onehalf/blob/master/vim/colors/onehalfdark.vim)
 - [`~/.vimrc`](.vimrc)
 - `.vimrc`, `.vim` should always be located on `$HOME`
 
