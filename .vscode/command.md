@@ -22,7 +22,7 @@
   - Copy the current line.
 11. `cursor + command + x`
   - Delete the current line.
-12. `multiline 블록지정 + tab`
+12. `multiline block + tab`
   - Indent multiline to the right.
 13. `shift + tab`
   - Indent multiline to the right.
