@@ -12,8 +12,14 @@ export WORK=$DEV_ROOT/work
 export ZSH=$DEV_SDK/zsh
 
 # PATH
-export PATH="/usr/local/bin:$PATH"
-export PATH="$DEV_ROOT/bin:$PATH"
+# RN > 0.68
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# RN <= 0.68
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
 
 # ALIAS
 alias zshc="vi $DEV_ROOT/.zshrc" # zsh config
@@ -24,12 +30,25 @@ alias play="cd $PLAY" # personal workplace
 alias work="cd $WORK" # work related workplace
 alias gcl="git config -l" # git config list
 alias brl="brew deps --tree \$(brew leaves)" # brew list
+alias npmgl="npm list -g --depth 0" # npm global installed list
 
 # remove duplicated $PATH
 typeset -U PATH
 
 # BREW CONFIG
 eval "$(/usr/local/bin/brew shellenv)"
+
+# RUBY CONFIG
+eval "$(rbenv init - zsh)"
+
+# JAVA JDK
+export JAVA_HOME_11=$(/usr/libexec/java_home -v11)
+# Version change e.g.
+# export JAVA_HOME_13=$(/usr/libexec/java_home -v13) 
+
+export JAVA_HOME=$JAVA_HOME_11
+# Version change e.g.
+# export JAVA_HOME=$JAVA_HOME_13
 
 # FZF CONFIG
 # bind fzf alt key
