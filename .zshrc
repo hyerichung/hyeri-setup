@@ -12,14 +12,17 @@ export WORK=$DEV_ROOT/work
 export ZSH=$DEV_SDK/zsh
 
 # PATH
-# RN > 0.68
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+# RN >= 0.68
+export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk  
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator  
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 
-# RN <= 0.68
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
+# RN < 0.68
+export ANDROID_HOME=$HOME/Library/Android/sdk  
+export PATH=$PATH:$ANDROID_HOME/emulator  
+export PATH=$PATH:$ANDROID_HOME/tools  
+export PATH=$PATH:$ANDROID_HOME/tools/bin  
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # ALIAS
 alias zshc="vi $DEV_ROOT/.zshrc" # zsh config
