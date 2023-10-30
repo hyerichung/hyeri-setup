@@ -27,7 +27,7 @@
         IdentityFile ~/.ssh/id_rsa_hyericdev
         User hyericdev
     ```
-8. `ssh-add -K ~/.ssh/id_rsa_hyerichungdev`<br>
+8. `ssh-add --apple-load-keychain ~/.ssh/id_rsa_hyerichungdev`<br>
 9. Github Settings > SSH key > paste ssh key value from below  
   `pbcopy < ~/.ssh/id_rsa_hyerichungdev.pub`
 10. `ssh -T git@github.com-hyerichungdev`  
@@ -49,9 +49,14 @@
   - `git config --unset user.email`
 
 #### check ssh or config
-  - `ssh-add -l`
+  - `ssh-add -l` > if you don't have any, `ssh-add ~/.ssh/id_rsa_hyerichungdev`
   - `git config -l`
   - `ssh-agent -k` > force the agent to clear
+  - `chmod 700 ~/.ssh`, 
+  - `chmod 600 ~/.ssh/id_rsa`
+  - `chmod 644 ~/.ssh/id_rsa.pub `
+  - `chmod 644 ~/.ssh/authorized_keys`
+  - `chmod 644 ~/.ssh/known_hosts`
 
 #### git command?
   - `git config —global alias.st status`
