@@ -26,6 +26,8 @@
   - `ruby -v`
     - `ruby 2.6.10p210 (2022-04-12 revision 67958) [universal.x86_64-darwin22]` > mac default ruby
     - `ruby 3.2.2 (2023-03-30 revision e51014f9c0) [x86_64-darwin22]` > rbenv ruby
+    - `rbenv global 3.2.2`
+    - `rbenv local 2.7.4`
   - `rbenv global 3.2.2` > change ruby version
 - Install cocoapods
   - `sudo gem install cocoapods`
