@@ -10,8 +10,6 @@
     "equinusocio.vsc-material-theme-icons",
     "GitHub.github-vscode-theme",
     // dev
-    "rangav.vscode-thunder-client",
-    "ritwickdey.LiveServer",
     "AntiAntiSepticeye.vscode-color-picker",
     "formulahendry.auto-rename-tag",
     "jock.svg",
@@ -24,6 +22,5 @@
     "streetsidesoftware.code-spell-checker",
     // etc
     "adpyke.codesnap",
-    "WakaTime.vscode-wakatime"
   ]
 }
