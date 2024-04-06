@@ -1,10 +1,8 @@
 ### ssh key git
-- when you want to use multiple github account on same local computer. (personal, company account)
-
 1. `ssh-keygen -t ed25519 -C "hyerichungdev@gmail.com"`
 2. identify file path  
-  `/Users/hyerichung/.ssh/id_rsa_hyerichungdev`  
-3. password, password confirm > press enter.
+  - `/Users/hyerichung/.ssh/id_rsa_hyerichungdev`  
+3. password, password > press enter
 4. `eval "$(ssh-agent -s)"`
 5. `touch ~/.ssh/config` 
 6. `vim ~/.ssh/config`
@@ -40,7 +38,7 @@
   - `git config --global user.email hyerichungdev@gmail.com`
   - `git config --global user.name hyerichung`
 
-#### company works
+#### works
   - `git config user.email hyericdev@gmail.com`
   - `git config user.name hyeric`
 

@@ -88,6 +88,15 @@
  - `brew install watchman`
  - `gem install bundler`
  - `sudo gem install cocoapods`
+```
+rm -rf ~/Library/Caches/CocoaPods
+rm -rf Pods
+rm -rf ~/Library/Developer/Xcode/DerivedData/*
+pod deintegrate
+pod setup
+xcrun simctl list // Simulator list
+xcrun simctl shutdown 6180179F-9586-4DC9-9E9F-C397901176E8 // turn off the Simulator
+```
 
 #### ETC
 - gitkraken

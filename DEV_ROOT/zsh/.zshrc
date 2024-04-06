@@ -17,7 +17,7 @@ setopt HIST_FIND_NO_DUPS
 source $ZSH/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 source $ZSH/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-source $ZSH/plugins/you-should-use/you-should-use.plugin.zsh
+source $ZSH/plugins/you-should-use/you-should-use.plugin.zsh # TODO
 
 # Zsh themes
 source $ZSH/powerlevel10k/powerlevel10k.zsh-theme
